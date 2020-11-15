@@ -6,7 +6,7 @@ const ChannelContextMenu = getAllModules((m) =>	  m.default && m.default.display
   const Menu = getModule(["MenuGroup", "MenuItem"], false);
   const { getChannel } = getModule(["getChannel"], false);
   const { Plugin } = require("powercord/entities");
-  const { sleep } = require("powercord/util");
+  
   const getuser = require("powercord/webpack").getModule(["getCurrentUser"], false); // thanks to Oocrop for showing me how to get the user's perms
   module.exports = class disconnectallvoicechat extends Plugin {
 	async startPlugin() {
@@ -28,7 +28,7 @@ const ChannelContextMenu = getAllModules((m) =>	  m.default && m.default.display
 				  channel_id: null, 
 				},
 			  });
-			  sleep(350); // gonna make this into something changable w settings later
+			  
 			}
 		  },
 		  id: "disconnect-all-vc",

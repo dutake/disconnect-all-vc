@@ -16,9 +16,8 @@ const ChannelContextMenu = getAllModules((m) =>	  m.default && m.default.display
 		let channel = args[0].channel;
 		let channelmembers = this.getVoiceChannelMembers(channel.id);
 		if(channelmembers.length < 1) return res;
-  console.log(can(constants.Permissions.MOVE_MEMBERS, user, channel));
 		if (!can(constants.Permissions.MOVE_MEMBERS, user, channel)) return res;
-		console.log("DISCONNECT 2");
+		
 		let item = React.createElement(Menu.MenuItem, {  //Found out how to add stuff to this kinda menu from https://github.com/Twizzer/move-all-vc
 		  action: async () => {
 			for (const member of channelmembers) {

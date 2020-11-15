@@ -1,0 +1,8 @@
+{
+    "name": "Disconnect all from vc",
+    "version": "1.0.0",
+    "description": "A menu button to disconnect everyone from a set voicechannel.",
+    "author": "Dutake",
+    "license": "MIT"
+ }
+ 

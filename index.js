@@ -7,7 +7,7 @@ const {	getModule,	getAllModules,	React,	constants,} = require("powercord/webpac
 		await require('powercord/webpack').getModule([ 'container', 'base' ], false).container;
 
 
-		powercord.api.notices.sendToast('pc-example-toast', {
+		powercord.api.notices.sendToast('disconnect-all-vc', {
 			header: 'Disconnect-all-vc', // required
 			content: 'Hey! The Disconnect-all-vc plugin has moved to a new repo, click on the button for the new link',
 			// image: 'https://cdn.discordapp.com/attachments/437423765006057472/641087353011699722/hibiscus.png',
